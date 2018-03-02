@@ -1,4 +1,4 @@
-class AddPostStatusToBlogs < ActiveRecord::Migration[5.0]
+class AddStatusToBlogs < ActiveRecord::Migration[5.0]
   def change
     add_column :blogs, :status, :integer, default: 0
   end
