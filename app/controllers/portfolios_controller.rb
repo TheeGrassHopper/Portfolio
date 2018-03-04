@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def react_on_rails
+    @portfolio_items_react_on_rails = Portfolio.all.for_subtitile("React On Rails")
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
