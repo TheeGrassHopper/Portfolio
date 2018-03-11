@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'friendly_id', '~> 5.1.0'
+gem 'devise'
 gem 'rails', '~> 5.1.5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
