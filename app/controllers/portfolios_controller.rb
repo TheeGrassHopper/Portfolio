@@ -61,6 +61,5 @@ class PortfoliosController < ApplicationController
 
   def protfolio_params 
     params.require(:product).permit( :title, :subtitle, :body, technologies_attributes: [ :name ] )
-  
   end
 end
