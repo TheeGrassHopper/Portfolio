@@ -9,4 +9,11 @@ class Blog < ApplicationRecord
 
   belongs_to :topic, optional: true
 
+  def self.speciale_blog
+  	limit(3)
+  end
+
+  def self.featured_blogs
+  	limit(2)
+  end
 end

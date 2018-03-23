@@ -3,8 +3,8 @@ class BlogsController < ApplicationController
   layout 'blog'
   # GET /blogs
   # GET /blogs.json
-  def index
-    @blogs = Blog.all
+  def index 
+    @blogs = Blog.speciale_blog
     @page_title = "Alwan Mortada Blog's list"
   end
 
