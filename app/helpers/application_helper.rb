@@ -16,4 +16,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
 	end
+
+	def copyright_generator
+    AlsViewTool::Renderer.copyright "Alwan Mortada", "All Rights Reserved"
+	end
 end
