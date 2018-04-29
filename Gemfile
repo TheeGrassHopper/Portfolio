@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem "font-awesome-rails"
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'rails', '~> 5.1.5'
