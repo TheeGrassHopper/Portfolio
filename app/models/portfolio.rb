@@ -6,6 +6,7 @@ class Portfolio < ApplicationRecord
 	  validates_presence_of :title, :body, :main_image, :thumb_image
 
 	  scope :for_subtitile, -> (subtitle) { where('subtitle = ?', subtitle) }
+	  scope :by_position, -> { order('position ASC') }
 	  # scope :for_subtitile, -> (subtitle) { where(subtitle: subtitle) }
 	  # def self.react_on_rails
 	  # 	where(subtitle: "React On Rails")

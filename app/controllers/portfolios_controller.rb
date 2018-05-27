@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :create, :new, :update, :edit]}, site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def react_on_rails
