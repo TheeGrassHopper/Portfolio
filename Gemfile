@@ -5,10 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
-gem "font-awesome-rails"
-gem 'friendly_id', '~> 5.1.0'
-gem 'devise'
+
 gem 'rails', '~> 5.1.5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
@@ -17,10 +14,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'bootstrap', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'als_view_tool', git: 'https://github.com/TheeGrassHopper/Als_view_tools.git'
-gem 'petergate'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -37,4 +30,13 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem "font-awesome-rails"
+gem 'friendly_id', '~> 5.1.0'
+gem 'devise'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'als_view_tool', git: 'https://github.com/TheeGrassHopper/Als_view_tools.git'
+gem 'petergate'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
